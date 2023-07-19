@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_SOURCE_DIR = /home/tejas/work/hotstuffO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_BINARY_DIR = /home/tejas/work/hotstuffO
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/Pictures/libhotstuff/CMakeFiles /home/tejas/Pictures/libhotstuff/test//CMakeFiles/progress.marks
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/Pictures/libhotstuff/CMakeFiles 0
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/work/hotstuffO/CMakeFiles /home/tejas/work/hotstuffO/test//CMakeFiles/progress.marks
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/work/hotstuffO/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/test_secp256k1.dir/rule:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_secp256k1.dir/rule
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_secp256k1.dir/rule
 .PHONY : test/CMakeFiles/test_secp256k1.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ test_secp256k1: test/CMakeFiles/test_secp256k1.dir/rule
 
 # fast build rule for target.
 test_secp256k1/fast:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/build
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/build
 .PHONY : test_secp256k1/fast
 
 test_secp256k1.o: test_secp256k1.cpp.o
@@ -180,7 +180,7 @@ test_secp256k1.o: test_secp256k1.cpp.o
 
 # target to build an object file
 test_secp256k1.cpp.o:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o
 .PHONY : test_secp256k1.cpp.o
 
 test_secp256k1.i: test_secp256k1.cpp.i
@@ -188,7 +188,7 @@ test_secp256k1.i: test_secp256k1.cpp.i
 
 # target to preprocess a source file
 test_secp256k1.cpp.i:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.i
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.i
 .PHONY : test_secp256k1.cpp.i
 
 test_secp256k1.s: test_secp256k1.cpp.s
@@ -196,7 +196,7 @@ test_secp256k1.s: test_secp256k1.cpp.s
 
 # target to generate assembly for a file
 test_secp256k1.cpp.s:
-	cd /home/tejas/Pictures/libhotstuff && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.s
+	cd /home/tejas/work/hotstuffO && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_secp256k1.dir/build.make test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.s
 .PHONY : test_secp256k1.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

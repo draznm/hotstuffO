@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_SOURCE_DIR = /home/tejas/work/hotstuffO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_BINARY_DIR = /home/tejas/work/hotstuffO
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hotstuff.dir/depend.make
@@ -72,86 +72,86 @@ include CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/util.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/util.cpp.o: src/util.cpp
 CMakeFiles/hotstuff.dir/src/util.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hotstuff.dir/src/util.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/util.cpp.o -MF CMakeFiles/hotstuff.dir/src/util.cpp.o.d -o CMakeFiles/hotstuff.dir/src/util.cpp.o -c /home/tejas/Pictures/libhotstuff/src/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hotstuff.dir/src/util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/util.cpp.o -MF CMakeFiles/hotstuff.dir/src/util.cpp.o.d -o CMakeFiles/hotstuff.dir/src/util.cpp.o -c /home/tejas/work/hotstuffO/src/util.cpp
 
 CMakeFiles/hotstuff.dir/src/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/util.cpp > CMakeFiles/hotstuff.dir/src/util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/util.cpp > CMakeFiles/hotstuff.dir/src/util.cpp.i
 
 CMakeFiles/hotstuff.dir/src/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/util.cpp -o CMakeFiles/hotstuff.dir/src/util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/util.cpp -o CMakeFiles/hotstuff.dir/src/util.cpp.s
 
 CMakeFiles/hotstuff.dir/src/client.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/client.cpp.o: src/client.cpp
 CMakeFiles/hotstuff.dir/src/client.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hotstuff.dir/src/client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/client.cpp.o -MF CMakeFiles/hotstuff.dir/src/client.cpp.o.d -o CMakeFiles/hotstuff.dir/src/client.cpp.o -c /home/tejas/Pictures/libhotstuff/src/client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hotstuff.dir/src/client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/client.cpp.o -MF CMakeFiles/hotstuff.dir/src/client.cpp.o.d -o CMakeFiles/hotstuff.dir/src/client.cpp.o -c /home/tejas/work/hotstuffO/src/client.cpp
 
 CMakeFiles/hotstuff.dir/src/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/client.cpp > CMakeFiles/hotstuff.dir/src/client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/client.cpp > CMakeFiles/hotstuff.dir/src/client.cpp.i
 
 CMakeFiles/hotstuff.dir/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/client.cpp -o CMakeFiles/hotstuff.dir/src/client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/client.cpp -o CMakeFiles/hotstuff.dir/src/client.cpp.s
 
 CMakeFiles/hotstuff.dir/src/crypto.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/crypto.cpp.o: src/crypto.cpp
 CMakeFiles/hotstuff.dir/src/crypto.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hotstuff.dir/src/crypto.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/crypto.cpp.o -MF CMakeFiles/hotstuff.dir/src/crypto.cpp.o.d -o CMakeFiles/hotstuff.dir/src/crypto.cpp.o -c /home/tejas/Pictures/libhotstuff/src/crypto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hotstuff.dir/src/crypto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/crypto.cpp.o -MF CMakeFiles/hotstuff.dir/src/crypto.cpp.o.d -o CMakeFiles/hotstuff.dir/src/crypto.cpp.o -c /home/tejas/work/hotstuffO/src/crypto.cpp
 
 CMakeFiles/hotstuff.dir/src/crypto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/crypto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/crypto.cpp > CMakeFiles/hotstuff.dir/src/crypto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/crypto.cpp > CMakeFiles/hotstuff.dir/src/crypto.cpp.i
 
 CMakeFiles/hotstuff.dir/src/crypto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/crypto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/crypto.cpp -o CMakeFiles/hotstuff.dir/src/crypto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/crypto.cpp -o CMakeFiles/hotstuff.dir/src/crypto.cpp.s
 
 CMakeFiles/hotstuff.dir/src/entity.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/entity.cpp.o: src/entity.cpp
 CMakeFiles/hotstuff.dir/src/entity.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hotstuff.dir/src/entity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/entity.cpp.o -MF CMakeFiles/hotstuff.dir/src/entity.cpp.o.d -o CMakeFiles/hotstuff.dir/src/entity.cpp.o -c /home/tejas/Pictures/libhotstuff/src/entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hotstuff.dir/src/entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/entity.cpp.o -MF CMakeFiles/hotstuff.dir/src/entity.cpp.o.d -o CMakeFiles/hotstuff.dir/src/entity.cpp.o -c /home/tejas/work/hotstuffO/src/entity.cpp
 
 CMakeFiles/hotstuff.dir/src/entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/entity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/entity.cpp > CMakeFiles/hotstuff.dir/src/entity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/entity.cpp > CMakeFiles/hotstuff.dir/src/entity.cpp.i
 
 CMakeFiles/hotstuff.dir/src/entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/entity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/entity.cpp -o CMakeFiles/hotstuff.dir/src/entity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/entity.cpp -o CMakeFiles/hotstuff.dir/src/entity.cpp.s
 
 CMakeFiles/hotstuff.dir/src/consensus.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/consensus.cpp.o: src/consensus.cpp
 CMakeFiles/hotstuff.dir/src/consensus.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hotstuff.dir/src/consensus.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/consensus.cpp.o -MF CMakeFiles/hotstuff.dir/src/consensus.cpp.o.d -o CMakeFiles/hotstuff.dir/src/consensus.cpp.o -c /home/tejas/Pictures/libhotstuff/src/consensus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hotstuff.dir/src/consensus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/consensus.cpp.o -MF CMakeFiles/hotstuff.dir/src/consensus.cpp.o.d -o CMakeFiles/hotstuff.dir/src/consensus.cpp.o -c /home/tejas/work/hotstuffO/src/consensus.cpp
 
 CMakeFiles/hotstuff.dir/src/consensus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/consensus.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/consensus.cpp > CMakeFiles/hotstuff.dir/src/consensus.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/consensus.cpp > CMakeFiles/hotstuff.dir/src/consensus.cpp.i
 
 CMakeFiles/hotstuff.dir/src/consensus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/consensus.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/consensus.cpp -o CMakeFiles/hotstuff.dir/src/consensus.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/consensus.cpp -o CMakeFiles/hotstuff.dir/src/consensus.cpp.s
 
 CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o: CMakeFiles/hotstuff.dir/flags.make
 CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o: src/hotstuff.cpp
 CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o: CMakeFiles/hotstuff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o -MF CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o.d -o CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o -c /home/tejas/Pictures/libhotstuff/src/hotstuff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o -MF CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o.d -o CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o -c /home/tejas/work/hotstuffO/src/hotstuff.cpp
 
 CMakeFiles/hotstuff.dir/src/hotstuff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hotstuff.dir/src/hotstuff.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/Pictures/libhotstuff/src/hotstuff.cpp > CMakeFiles/hotstuff.dir/src/hotstuff.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tejas/work/hotstuffO/src/hotstuff.cpp > CMakeFiles/hotstuff.dir/src/hotstuff.cpp.i
 
 CMakeFiles/hotstuff.dir/src/hotstuff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hotstuff.dir/src/hotstuff.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/Pictures/libhotstuff/src/hotstuff.cpp -o CMakeFiles/hotstuff.dir/src/hotstuff.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tejas/work/hotstuffO/src/hotstuff.cpp -o CMakeFiles/hotstuff.dir/src/hotstuff.cpp.s
 
 hotstuff: CMakeFiles/hotstuff.dir/src/util.cpp.o
 hotstuff: CMakeFiles/hotstuff.dir/src/client.cpp.o
@@ -171,6 +171,6 @@ CMakeFiles/hotstuff.dir/clean:
 .PHONY : CMakeFiles/hotstuff.dir/clean
 
 CMakeFiles/hotstuff.dir/depend:
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hotstuff.dir/depend
 

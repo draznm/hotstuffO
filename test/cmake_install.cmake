@@ -1,4 +1,4 @@
-# Install script for directory: /home/tejas/Pictures/libhotstuff/test
+# Install script for directory: /home/tejas/work/hotstuffO/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

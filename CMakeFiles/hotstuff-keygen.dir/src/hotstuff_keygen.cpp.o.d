@@ -1,5 +1,5 @@
 CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
- /home/tejas/Pictures/libhotstuff/src/hotstuff_keygen.cpp \
+ /home/tejas/work/hotstuffO/src/hotstuff_keygen.cpp \
  /usr/include/stdc-predef.h /usr/include/error.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -11,7 +11,7 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/error.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/util.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/util.h \
  /usr/include/getopt.h /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_ext.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -36,7 +36,7 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/config.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/config.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -180,10 +180,10 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/ref.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/ref.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/crypto.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/crypto.h \
  /usr/include/openssl/rand.h /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
@@ -208,10 +208,10 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/openssl/bnerr.h /usr/include/openssl/objects.h \
  /usr/include/openssl/obj_mac.h /usr/include/openssl/asn1.h \
  /usr/include/openssl/asn1err.h /usr/include/openssl/objectserr.h \
- /home/tejas/Pictures/libhotstuff/secp256k1/include/secp256k1.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/crypto.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/type.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/config.h \
+ /home/tejas/work/hotstuffO/secp256k1/include/secp256k1.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/crypto.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/type.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/config.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/ios \
  /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -232,7 +232,7 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/endian.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/endian.h \
  /usr/include/openssl/sha.h /usr/include/openssl/ssl.h \
  /usr/include/openssl/comp.h /usr/include/openssl/comperr.h \
  /usr/include/openssl/x509.h /usr/include/openssl/buffer.h \
@@ -255,8 +255,8 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/openssl/ssl2.h /usr/include/openssl/ssl3.h \
  /usr/include/openssl/tls1.h /usr/include/openssl/dtls1.h \
  /usr/include/openssl/srtp.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/type.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/promise.hpp \
+ /home/tejas/work/hotstuffO/include/hotstuff/type.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/promise.hpp \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_stack.h /usr/include/c++/11/memory \
@@ -271,7 +271,7 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/any \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/event.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/event.h \
  /usr/include/c++/11/condition_variable /usr/include/uv.h \
  /usr/include/uv/errno.h /usr/include/uv/version.h /usr/include/uv/unix.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
@@ -340,24 +340,24 @@ CMakeFiles/hotstuff-keygen.dir/src/hotstuff_keygen.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/param.h \
  /usr/include/asm-generic/param.h /usr/include/uv/threadpool.h \
  /usr/include/uv/linux.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/queue.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/queue.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/eventfd.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/netaddr.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/stream.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/network.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/msg.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/conn.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/netaddr.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/stream.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/network.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/msg.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/conn.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/buffer.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/buffer.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
  /usr/include/c++/11/shared_mutex \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/task.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/util.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/config.h
+ /home/tejas/work/hotstuffO/include/hotstuff/task.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/util.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/config.h

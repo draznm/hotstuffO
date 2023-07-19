@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_SOURCE_DIR = /home/tejas/work/hotstuffO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_BINARY_DIR = /home/tejas/work/hotstuffO
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hotstuff_static.dir/depend.make
@@ -74,12 +74,12 @@ hotstuff_static_OBJECTS =
 
 # External object files for target hotstuff_static
 hotstuff_static_EXTERNAL_OBJECTS = \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/util.cpp.o" \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/client.cpp.o" \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/crypto.cpp.o" \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/entity.cpp.o" \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/consensus.cpp.o" \
-"/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o"
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/util.cpp.o" \
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/client.cpp.o" \
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/crypto.cpp.o" \
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/entity.cpp.o" \
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/consensus.cpp.o" \
+"/home/tejas/work/hotstuffO/CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o"
 
 libhotstuff.a: CMakeFiles/hotstuff.dir/src/util.cpp.o
 libhotstuff.a: CMakeFiles/hotstuff.dir/src/client.cpp.o
@@ -89,7 +89,7 @@ libhotstuff.a: CMakeFiles/hotstuff.dir/src/consensus.cpp.o
 libhotstuff.a: CMakeFiles/hotstuff.dir/src/hotstuff.cpp.o
 libhotstuff.a: CMakeFiles/hotstuff_static.dir/build.make
 libhotstuff.a: CMakeFiles/hotstuff_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libhotstuff.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libhotstuff.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/hotstuff_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hotstuff_static.dir/link.txt --verbose=$(VERBOSE)
 
@@ -102,6 +102,6 @@ CMakeFiles/hotstuff_static.dir/clean:
 .PHONY : CMakeFiles/hotstuff_static.dir/clean
 
 CMakeFiles/hotstuff_static.dir/depend:
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO/CMakeFiles/hotstuff_static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hotstuff_static.dir/depend
 

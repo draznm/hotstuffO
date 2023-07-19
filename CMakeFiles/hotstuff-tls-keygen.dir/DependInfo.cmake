@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tejas/Pictures/libhotstuff/src/hotstuff_tls_keygen.cpp" "CMakeFiles/hotstuff-tls-keygen.dir/src/hotstuff_tls_keygen.cpp.o" "gcc" "CMakeFiles/hotstuff-tls-keygen.dir/src/hotstuff_tls_keygen.cpp.o.d"
+  "/home/tejas/work/hotstuffO/src/hotstuff_tls_keygen.cpp" "CMakeFiles/hotstuff-tls-keygen.dir/src/hotstuff_tls_keygen.cpp.o" "gcc" "CMakeFiles/hotstuff-tls-keygen.dir/src/hotstuff_tls_keygen.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff_static.dir/DependInfo.cmake"
-  "/home/tejas/Pictures/libhotstuff/salticidae/CMakeFiles/salticidae_static.dir/DependInfo.cmake"
+  "/home/tejas/work/hotstuffO/CMakeFiles/hotstuff_static.dir/DependInfo.cmake"
+  "/home/tejas/work/hotstuffO/salticidae/CMakeFiles/salticidae_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

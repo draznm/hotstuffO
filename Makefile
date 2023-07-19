@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_SOURCE_DIR = /home/tejas/work/hotstuffO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_BINARY_DIR = /home/tejas/work/hotstuffO
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/Pictures/libhotstuff/CMakeFiles /home/tejas/Pictures/libhotstuff//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/work/hotstuffO/CMakeFiles /home/tejas/work/hotstuffO//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/Pictures/libhotstuff/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tejas/work/hotstuffO/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

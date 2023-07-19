@@ -1,8 +1,8 @@
 CMakeFiles/hotstuff.dir/src/util.cpp.o: \
- /home/tejas/Pictures/libhotstuff/src/util.cpp /usr/include/stdc-predef.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/util.h \
- /home/tejas/Pictures/libhotstuff/include/hotstuff/config.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/util.h \
+ /home/tejas/work/hotstuffO/src/util.cpp /usr/include/stdc-predef.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/util.h \
+ /home/tejas/work/hotstuffO/include/hotstuff/config.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/util.h \
  /usr/include/getopt.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -35,7 +35,7 @@ CMakeFiles/hotstuff.dir/src/util.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/config.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/config.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -181,6 +181,6 @@ CMakeFiles/hotstuff.dir/src/util.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/tejas/Pictures/libhotstuff/salticidae/include/salticidae/ref.h \
+ /home/tejas/work/hotstuffO/salticidae/include/salticidae/ref.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h

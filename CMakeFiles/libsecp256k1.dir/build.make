@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_SOURCE_DIR = /home/tejas/work/hotstuffO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tejas/Pictures/libhotstuff
+CMAKE_BINARY_DIR = /home/tejas/work/hotstuffO
 
 # Utility rule file for libsecp256k1.
 
@@ -76,53 +76,53 @@ CMakeFiles/libsecp256k1-complete: libsecp256k1-prefix/src/libsecp256k1-stamp/lib
 CMakeFiles/libsecp256k1-complete: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure
 CMakeFiles/libsecp256k1-complete: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build
 CMakeFiles/libsecp256k1-complete: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libsecp256k1'"
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/CMakeFiles
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/CMakeFiles/libsecp256k1-complete
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libsecp256k1'"
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/CMakeFiles
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/CMakeFiles/libsecp256k1-complete
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-done
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libsecp256k1'"
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && make
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libsecp256k1'"
+	cd /home/tejas/work/hotstuffO/secp256k1 && make
+	cd /home/tejas/work/hotstuffO/secp256k1 && /usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure: libsecp256k1-prefix/tmp/libsecp256k1-cfgcmd.txt
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libsecp256k1'"
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /home/tejas/Pictures/libhotstuff/secp256k1/autogen.sh
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /home/tejas/Pictures/libhotstuff/secp256k1/configure --disable-shared --with-pic --with-bignum=no --enable-module-recovery
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libsecp256k1'"
+	cd /home/tejas/work/hotstuffO/secp256k1 && /home/tejas/work/hotstuffO/secp256k1/autogen.sh
+	cd /home/tejas/work/hotstuffO/secp256k1 && /home/tejas/work/hotstuffO/secp256k1/configure --disable-shared --with-pic --with-bignum=no --enable-module-recovery
+	cd /home/tejas/work/hotstuffO/secp256k1 && /usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-download: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'libsecp256k1'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'libsecp256k1'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-download
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-download
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-install: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'libsecp256k1'"
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /usr/bin/cmake -E echo_append
-	cd /home/tejas/Pictures/libhotstuff/secp256k1 && /usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'libsecp256k1'"
+	cd /home/tejas/work/hotstuffO/secp256k1 && /usr/bin/cmake -E echo_append
+	cd /home/tejas/work/hotstuffO/secp256k1 && /usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-install
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libsecp256k1'"
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/secp256k1
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/secp256k1
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src
-	/usr/bin/cmake -E make_directory /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libsecp256k1'"
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/secp256k1
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/secp256k1
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/libsecp256k1-prefix
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/libsecp256k1-prefix/tmp
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/libsecp256k1-prefix/src
+	/usr/bin/cmake -E make_directory /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-mkdir
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-patch: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libsecp256k1'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libsecp256k1'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-patch
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-patch
 
 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-update: libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/Pictures/libhotstuff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'libsecp256k1'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tejas/work/hotstuffO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'libsecp256k1'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/tejas/Pictures/libhotstuff/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-update
+	/usr/bin/cmake -E touch /home/tejas/work/hotstuffO/libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-update
 
 libsecp256k1: CMakeFiles/libsecp256k1
 libsecp256k1: CMakeFiles/libsecp256k1-complete
@@ -145,6 +145,6 @@ CMakeFiles/libsecp256k1.dir/clean:
 .PHONY : CMakeFiles/libsecp256k1.dir/clean
 
 CMakeFiles/libsecp256k1.dir/depend:
-	cd /home/tejas/Pictures/libhotstuff && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff /home/tejas/Pictures/libhotstuff/CMakeFiles/libsecp256k1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tejas/work/hotstuffO && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO /home/tejas/work/hotstuffO/CMakeFiles/libsecp256k1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libsecp256k1.dir/depend
 

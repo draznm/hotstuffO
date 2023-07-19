@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tejas/Pictures/libhotstuff/test/test_secp256k1.cpp" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o" "gcc" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o.d"
+  "/home/tejas/work/hotstuffO/test/test_secp256k1.cpp" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o" "gcc" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tejas/Pictures/libhotstuff/CMakeFiles/hotstuff_static.dir/DependInfo.cmake"
-  "/home/tejas/Pictures/libhotstuff/salticidae/CMakeFiles/salticidae_static.dir/DependInfo.cmake"
+  "/home/tejas/work/hotstuffO/CMakeFiles/hotstuff_static.dir/DependInfo.cmake"
+  "/home/tejas/work/hotstuffO/salticidae/CMakeFiles/salticidae_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

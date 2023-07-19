@@ -70,3 +70,75 @@ gmake: *** [Makefile:127: cmTC_1af8c/fast] Error 2
 
 
 
+Determining if the function kstat_lookup exists in the kstat failed with the following output:
+Change Dir: /home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b6f6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b6f6.dir/build.make CMakeFiles/cmTC_4b6f6.dir/build
+gmake[1]: Entering directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b6f6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=kstat_lookup -std=gnu11 -o CMakeFiles/cmTC_4b6f6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4b6f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b6f6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=kstat_lookup CMakeFiles/cmTC_4b6f6.dir/CheckFunctionExists.c.o -o cmTC_4b6f6   -L/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/kstat.h  -Wl,-rpath,/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/kstat.h -lkstat 
+/usr/bin/ld: cannot find -lkstat: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_4b6f6.dir/build.make:99: cmTC_4b6f6] Error 1
+gmake[1]: Leaving directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4b6f6/fast] Error 2
+
+
+
+Determining if the function kvm_open exists in the kvm failed with the following output:
+Change Dir: /home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f4b28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4b28.dir/build.make CMakeFiles/cmTC_f4b28.dir/build
+gmake[1]: Entering directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4b28.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=kvm_open -std=gnu11 -o CMakeFiles/cmTC_f4b28.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f4b28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b28.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=kvm_open CMakeFiles/cmTC_f4b28.dir/CheckFunctionExists.c.o -o cmTC_f4b28   -L/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/kvm.h  -Wl,-rpath,/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/kvm.h -lkvm 
+/usr/bin/ld: cannot find -lkvm: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_f4b28.dir/build.make:99: cmTC_f4b28] Error 1
+gmake[1]: Leaving directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f4b28/fast] Error 2
+
+
+
+Determining if the function perfstat_cpu exists in the perfstat failed with the following output:
+Change Dir: /home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01b43/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_01b43.dir/build.make CMakeFiles/cmTC_01b43.dir/build
+gmake[1]: Entering directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01b43.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=perfstat_cpu -std=gnu11 -o CMakeFiles/cmTC_01b43.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_01b43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01b43.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=perfstat_cpu CMakeFiles/cmTC_01b43.dir/CheckFunctionExists.c.o -o cmTC_01b43   -L/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/libperfstat.h  -Wl,-rpath,/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp/libperfstat.h -lperfstat 
+/usr/bin/ld: cannot find -lperfstat: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_01b43.dir/build.make:99: cmTC_01b43] Error 1
+gmake[1]: Leaving directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_01b43/fast] Error 2
+
+
+
+Determining if the function sendfile exists in the sendfile failed with the following output:
+Change Dir: /home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_552c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_552c2.dir/build.make CMakeFiles/cmTC_552c2.dir/build
+gmake[1]: Entering directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_552c2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sendfile -std=gnu11 -o CMakeFiles/cmTC_552c2.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_552c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_552c2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sendfile CMakeFiles/cmTC_552c2.dir/CheckFunctionExists.c.o -o cmTC_552c2  -lsendfile 
+/usr/bin/ld: cannot find -lsendfile: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_552c2.dir/build.make:99: cmTC_552c2] Error 1
+gmake[1]: Leaving directory '/home/tejas/work/hotstuffO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_552c2/fast] Error 2
+
+
+
