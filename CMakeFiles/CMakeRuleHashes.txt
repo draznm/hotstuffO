@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+aa39c2a62d3d51dfd32dbb73a1e46da8 CMakeFiles/libsecp256k1
+7caf1041f833ef41d53c0df258893f15 CMakeFiles/libsecp256k1-complete
+cf92b6882a0e2971c68d4cf1e04e6384 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-build
+db46a5ef97e0de6b10957b1aba64aa49 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-configure
+09bd56cb474fae2d836f6468bed26a4f libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-download
+69a00ae1cea300d4dee02f305b0c5a43 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-install
+3245b470654965a4ca8e6a957904f920 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-mkdir
+d6c6b56dfedc0c86c1552ac824f9e5d6 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-patch
+482b60e3fdd5225752dcc1a2eb1738a0 libsecp256k1-prefix/src/libsecp256k1-stamp/libsecp256k1-update
