@@ -77,10 +77,10 @@ bool try_send(bool check = true) {
         auto cmd = new CommandDummy(cid, cnt++);
         MsgReqCmd msg(*cmd);
         for (auto &p: conns) mn->send_msg(msg, p.second);
-#ifndef HOTSTUFF_ENABLE_BENCHMARK
+//#ifndef HOTSTUFF_ENABLE_BENCHMARK
         HOTSTUFF_LOG_INFO("send new cmd %.10s",
                             get_hex(cmd->get_hash()).c_str());
-#endif
+//#endif
         waiting.insert(std::make_pair(
             cmd->get_hash(), Request(cmd)));
         if (max_iter_num > 0)
@@ -99,15 +99,15 @@ void client_resp_cmd_handler(MsgRespCmd &&msg, const Net::conn_t &) {
     if (it == waiting.end()) return;
     et.stop();
     if (++it->second.confirmed <= nfaulty) return; // wait for f + 1 ack
-#ifndef HOTSTUFF_ENABLE_BENCHMARK
+//#ifndef HOTSTUFF_ENABLE_BENCHMARK
     HOTSTUFF_LOG_INFO("got %s, wall: %.3f, cpu: %.3f",
                         std::string(fin).c_str(),
                         et.elapsed_sec, et.cpu_elapsed_sec);
-#else
+//#else
     struct timeval tv;
     gettimeofday(&tv, nullptr);
     elapsed.push_back(std::make_pair(tv, et.elapsed_sec));
-#endif
+//#endif
     waiting.erase(it);
     while (try_send());
 }
