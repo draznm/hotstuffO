@@ -172,7 +172,7 @@ int main(int argc, char **argv) {
     while (try_send());
     ec.dispatch();
 
-#ifdef HOTSTUFF_ENABLE_BENCHMARK
+//#ifdef HOTSTUFF_ENABLE_BENCHMARK
     for (const auto &e: elapsed)
     {
         char fmt[64];
@@ -180,6 +180,6 @@ int main(int argc, char **argv) {
         strftime(fmt, sizeof fmt, "%Y-%m-%d %H:%M:%S.%%06u [hotstuff info] %%.6f\n", tmp);
         fprintf(stderr, fmt, e.first.tv_usec, e.second);
     }
-#endif
+//#endif
     return 0;
 }
