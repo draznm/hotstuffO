@@ -158,9 +158,9 @@ class HotStuffBase: public HotStuffCore {
     std::unordered_map<const uint256_t, BlockFetchContext> blk_fetch_waiting;
     std::unordered_map<const uint256_t, BlockDeliveryContext> blk_delivery_waiting;
     std::unordered_map<const uint256_t, commit_cb_t> decision_waiting;
-    using cmd_queue_t = salticidae::MPSCQueueEventDriven<std::pair<uint256_t, commit_cb_t>>;
+    using cmd_queue_t = salticidae::MPSCQueueEventDriven<std::pair<std::pair<uint256_t, std::pair<int, int>>, commit_cb_t>>;
     cmd_queue_t cmd_pending;
-    std::queue<uint256_t> cmd_pending_buffer;
+    std::queue<std::tuple<uint256_t, int, int>> cmd_pending_buffer;
 
     /* statistics */
     uint64_t fetched;
@@ -195,7 +195,10 @@ class HotStuffBase: public HotStuffCore {
 
     void do_broadcast_proposal(const Proposal &) override;
     void do_vote(ReplicaID, const Vote &) override;
-    void do_decide(Finality &&) override;
+    void do_decide(Finality &&, int key, int val) override;
+    void do_decide_read_only(Finality &&, int key, int value) override;
+
+
     void do_consensus(const block_t &blk) override;
 
     protected:
@@ -203,6 +206,9 @@ class HotStuffBase: public HotStuffCore {
     /** Called to replicate the execution of a command, the application should
      * implement this to make transition for the application state. */
     virtual void state_machine_execute(const Finality &) = 0;
+    virtual std::string db_read(int key) = 0;
+    virtual std::string db_write(int key, int val) = 0;
+
 
     public:
     HotStuffBase(uint32_t blk_size,
@@ -219,7 +225,7 @@ class HotStuffBase: public HotStuffCore {
     /* the API for HotStuffBase */
 
     /* Submit the command to be decided. */
-    void exec_command(uint256_t cmd_hash, commit_cb_t callback);
+    void exec_command(uint256_t cmd_hash, int key, int val, commit_cb_t callback);
     void start(std::vector<std::tuple<NetAddr, pubkey_bt, uint256_t>> &&replicas,
                 bool ec_loop = false);
 

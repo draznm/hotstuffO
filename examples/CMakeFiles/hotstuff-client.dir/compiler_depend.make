@@ -259,14 +259,8 @@ examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o: examples/hotstuff
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
-  salticidae/include/salticidae/type.h \
-  salticidae/include/salticidae/config.h \
-  /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
-  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -286,8 +280,14 @@ examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o: examples/hotstuff
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  include/hotstuff/database.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/bits/hashtable.h \
   /usr/include/c++/11/bits/hashtable_policy.h \
@@ -295,18 +295,28 @@ examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o: examples/hotstuff
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/mutex \
+  include/hotstuff/HashMap.h \
+  include/hotstuff/HashBucket.h \
+  include/hotstuff/HashNode.h \
+  /usr/include/c++/11/shared_mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/mutex \
   /usr/include/c++/11/bits/unique_lock.h \
-  salticidae/include/salticidae/endian.h \
-  salticidae/include/salticidae/netaddr.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/iostream \
+  include/hotstuff/in_memory_db.cpp \
+  include/hotstuff/database.h \
+  include/hotstuff/helper.h \
+  include/hotstuff/util.h \
+  include/hotstuff/config.h \
   salticidae/include/salticidae/util.h \
   /usr/include/getopt.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
@@ -320,8 +330,18 @@ examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o: examples/hotstuff
   /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   salticidae/include/salticidae/config.h \
   /usr/include/c++/11/cstdarg \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   salticidae/include/salticidae/ref.h \
   /usr/include/c++/11/atomic \
+  salticidae/include/salticidae/type.h \
+  salticidae/include/salticidae/config.h \
+  /usr/include/c++/11/cstddef \
+  salticidae/include/salticidae/endian.h \
+  salticidae/include/salticidae/netaddr.h \
   salticidae/include/salticidae/stream.h \
   salticidae/include/salticidae/crypto.h \
   /usr/include/openssl/sha.h \
@@ -485,11 +505,8 @@ examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o: examples/hotstuff
   salticidae/include/salticidae/buffer.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /usr/include/c++/11/shared_mutex \
   /usr/include/openssl/rand.h \
   /usr/include/openssl/randerr.h \
-  include/hotstuff/util.h \
-  include/hotstuff/config.h \
   include/hotstuff/type.h \
   include/hotstuff/promise.hpp \
   /usr/include/c++/11/stack \
@@ -571,10 +588,6 @@ salticidae/include/salticidae/conn.h:
 
 /usr/include/x86_64-linux-gnu/bits/dirent.h:
 
-/usr/include/c++/11/shared_mutex:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/c++/11/deque:
@@ -586,10 +599,6 @@ salticidae/include/salticidae/conn.h:
 /usr/include/uv/version.h:
 
 /usr/include/uv/errno.h:
-
-include/hotstuff/config.h:
-
-salticidae/include/salticidae/network.h:
 
 /usr/include/x86_64-linux-gnu/bits/netdb.h:
 
@@ -614,10 +623,6 @@ salticidae/include/salticidae/network.h:
 /usr/include/arpa/inet.h:
 
 /usr/include/openssl/srtp.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/openssl/dtls1.h:
 
 /usr/include/openssl/ssl2.h:
 
@@ -699,8 +704,6 @@ salticidae/include/salticidae/network.h:
 
 /usr/include/openssl/safestack.h:
 
-/usr/include/c++/11/stdlib.h:
-
 /usr/include/openssl/comp.h:
 
 /usr/include/openssl/tls1.h:
@@ -713,9 +716,19 @@ salticidae/include/salticidae/network.h:
 
 /usr/include/openssl/macros.h:
 
+/usr/include/openssl/evperr.h:
+
+salticidae/include/salticidae/type.h:
+
 /usr/include/c++/11/atomic:
 
 salticidae/include/salticidae/ref.h:
+
+/usr/include/x86_64-linux-gnu/sys/eventfd.h:
+
+/usr/include/openssl/async.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -737,6 +750,16 @@ include/hotstuff/promise.hpp:
 
 /usr/include/getopt.h:
 
+salticidae/include/salticidae/network.h:
+
+include/hotstuff/config.h:
+
+include/hotstuff/helper.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios.h:
+
+/usr/include/c++/11/mutex:
+
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/ctime:
@@ -747,9 +770,15 @@ include/hotstuff/promise.hpp:
 
 /usr/include/c++/11/ratio:
 
-/usr/include/x86_64-linux-gnu/bits/termios.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
-/usr/include/c++/11/mutex:
+/usr/include/c++/11/shared_mutex:
+
+/usr/include/c++/11/stdlib.h:
+
+include/hotstuff/HashBucket.h:
+
+include/hotstuff/HashMap.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -760,6 +789,24 @@ include/hotstuff/promise.hpp:
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/unordered_map:
+
+include/hotstuff/database.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/openssl/dtls1.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/c++/11/ostream:
 
 /usr/include/linux/types.h:
 
@@ -781,11 +828,15 @@ include/hotstuff/promise.hpp:
 
 /usr/include/c++/11/cwctype:
 
+/usr/include/string.h:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
 /usr/include/c++/11/streambuf:
 
-include/hotstuff/util.h:
-
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+include/hotstuff/util.h:
 
 /usr/include/c++/11/stdexcept:
 
@@ -795,19 +846,9 @@ include/hotstuff/util.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/x86_64-linux-gnu/sys/eventfd.h:
+/usr/include/c++/11/istream:
 
-/usr/include/openssl/async.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/string.h:
-
-/usr/include/openssl/evperr.h:
-
-salticidae/include/salticidae/type.h:
+/usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -965,6 +1006,8 @@ salticidae/include/salticidae/netaddr.h:
 
 salticidae/include/salticidae/crypto.h:
 
+include/hotstuff/HashNode.h:
+
 /usr/include/c++/11/bits/random.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
@@ -1045,6 +1088,8 @@ salticidae/include/salticidae/buffer.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
+include/hotstuff/in_memory_db.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -1067,9 +1112,11 @@ salticidae/include/salticidae/buffer.h:
 
 /usr/include/c++/11/random:
 
-/usr/include/c++/11/bits/node_handle.h:
-
 salticidae/include/salticidae/config.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -1187,6 +1234,8 @@ salticidae/include/salticidae/util.h:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
+/usr/include/c++/11/bits/codecvt.h:
+
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
@@ -1255,9 +1304,9 @@ salticidae/include/salticidae/util.h:
 
 /usr/include/openssl/asyncerr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
 salticidae/include/salticidae/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
 

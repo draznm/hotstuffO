@@ -36,6 +36,11 @@
 #include "hotstuff/hotstuff.h"
 #include "hotstuff/liveness.h"
 
+#include "hotstuff/database.h"
+#include "hotstuff/in_memory_db.cpp"
+#include "hotstuff/helper.h"
+
+
 using salticidae::MsgNetwork;
 using salticidae::ClientNetwork;
 using salticidae::ElapsedTime;
@@ -80,6 +85,11 @@ class HotStuffApp: public HotStuff {
     /** The listen address for client RPC */
     NetAddr clisten_addr;
 
+
+
+    DataBase *db = new InMemoryDB();
+
+
     std::unordered_map<const uint256_t, promise_t> unconfirmed;
 
     using conn_t = ClientNetwork<opcode_t>::conn_t;
@@ -105,11 +115,40 @@ class HotStuffApp: public HotStuff {
         impeach_timer.add(impeach_timeout);
     }
 
+
+
+
+    std::string db_read(int key) override {
+        std::string status = "";
+        HOTSTUFF_LOG_INFO("db_read: key is %d", key);
+
+        db->Get(std::to_string(key));
+        status =  "READ";
+
+
+        return status;
+    }
+
+
+    std::string db_write(int key, int val) override {
+        std::string status = "";
+        HOTSTUFF_LOG_INFO("db_write: key, val is %d, %d", key, val);
+
+        db->Put(std::to_string(key), std::to_string(2));
+//        db->Get(std::to_string(key));
+
+        status =  "UPDATE";
+
+
+        return status;
+    }
+
+
     void state_machine_execute(const Finality &fin) override {
         reset_imp_timer();
-#ifndef HOTSTUFF_ENABLE_BENCHMARK
-        HOTSTUFF_LOG_INFO("replicated %s", std::string(fin).c_str());
-#endif
+        #ifndef HOTSTUFF_ENABLE_BENCHMARK
+                HOTSTUFF_LOG_INFO("replicated %s", std::string(fin).c_str());
+        #endif
     }
 
 #ifdef HOTSTUFF_MSG_STAT
@@ -340,7 +379,7 @@ void HotStuffApp::client_request_cmd_handler(MsgReqCmd &&msg, const conn_t &conn
     auto cmd = parse_cmd(msg.serialized);
     const auto &cmd_hash = cmd->get_hash();
     HOTSTUFF_LOG_DEBUG("processing %s", std::string(*cmd).c_str());
-    exec_command(cmd_hash, [this, addr](Finality fin) {
+    exec_command(cmd_hash, int(cmd->get_key()), int(cmd->get_val()), [this, addr](Finality fin) {
         resp_queue.enqueue(std::make_pair(fin, addr));
     });
 }
@@ -363,6 +402,14 @@ void HotStuffApp::start(const std::vector<std::tuple<NetAddr, bytearray_t, bytea
     HOTSTUFF_LOG_INFO("blk_size = %lu", blk_size);
     HOTSTUFF_LOG_INFO("conns = %lu", HotStuff::size());
     HOTSTUFF_LOG_INFO("** starting the event loop...");
+
+    db->Open("db-test");
+
+    printf("DB testing\nInsert key K1 with value V1\n");
+    db->Put("K1", "V1");
+    printf("DB K1, V1 inserted\n");
+
+
     HotStuff::start(reps);
     cn.reg_conn_handler([this](const salticidae::ConnPool::conn_t &_conn, bool connected) {
         auto conn = salticidae::static_pointer_cast<conn_t::type>(_conn);

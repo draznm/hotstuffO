@@ -1,0 +1,16 @@
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found suitable version "3.0.2", minimum required is "1.1.0")  
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tejas/work/hotstuffO
+[ 21%] Built target libsecp256k1
+Consolidate compiler generated dependencies of target salticidae
+Consolidate compiler generated dependencies of target hotstuff
+[ 45%] Built target salticidae
+[ 48%] Building CXX object CMakeFiles/hotstuff.dir/src/client.cpp.o
+[ 51%] Building CXX object CMakeFiles/hotstuff.dir/src/crypto.cpp.o
+[ 54%] Building CXX object CMakeFiles/hotstuff.dir/src/entity.cpp.o
+[ 56%] Building CXX object CMakeFiles/hotstuff.dir/src/consensus.cpp.o
+[ 59%] Built target salticidae_static
+[ 62%] Built target salticidae_shared

@@ -146,12 +146,12 @@ void HotStuffCore::update(const block_t &nblk) {
         LOG_PROTO("commit %s", std::string(*blk).c_str());
         for (size_t i = 0; i < blk->cmds.size(); i++)
             do_decide(Finality(id, 1, i, blk->height,
-                                blk->cmds[i], blk->get_hash()));
+                                blk->cmds[i], blk->get_hash()),  blk->keys[i], blk->vals[i]);
     }
     b_exec = blk;
 }
 
-block_t HotStuffCore::on_propose(const std::vector<uint256_t> &cmds,
+block_t HotStuffCore::on_propose(const std::vector<uint256_t> &cmds, const std::vector<int> &keys, const std::vector<int> &vals,
                             const std::vector<block_t> &parents,
                             bytearray_t &&extra) {
     if (parents.empty())
@@ -159,7 +159,7 @@ block_t HotStuffCore::on_propose(const std::vector<uint256_t> &cmds,
     for (const auto &_: parents) tails.erase(_);
     /* create the new block */
     block_t bnew = storage->add_blk(
-        new Block(parents, cmds,
+        new Block(parents, cmds, keys, vals,
             hqc.second->clone(), std::move(extra),
             parents[0]->height + 1,
             hqc.first,

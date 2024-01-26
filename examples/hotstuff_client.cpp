@@ -28,7 +28,7 @@
 #include "hotstuff/helper.h"
 
 
-
+#define CPU_FREQ 2.2
 
 #include "salticidae/type.h"
 #include "salticidae/netaddr.h"
@@ -135,12 +135,33 @@ uint64_t get_server_clock()
 void connect_all() {
     for (size_t i = 0; i < replicas.size(); i++)
         conns.insert(std::make_pair(i, mn->connect_sync(replicas[i])));
+
+
+    mrand = (myrand *) new myrand();
+
+    mrand->init(get_server_clock());
+
+
+
+    zeta_2_theta = zeta(2, g_zipf_theta);
+    the_n = table_size - 1;
+    denom = zeta(the_n, g_zipf_theta);
+
 }
 
 bool try_send(bool check = true) {
     if ((!check || waiting.size() < max_async_num) && max_iter_num)
     {
-        auto cmd = new CommandDummy(cid, cnt++);
+
+
+        int g_zipf_theta = 0.5;
+        int temp_key = zipf(table_size - 1, g_zipf_theta);
+
+        mrand->next();
+        int temp_value = 2;
+
+
+        auto cmd = new CommandDummy(cid, cnt++, temp_key, temp_value);
         MsgReqCmd msg(*cmd);
         for (auto &p: conns) mn->send_msg(msg, p.second);
 //#ifndef HOTSTUFF_ENABLE_BENCHMARK

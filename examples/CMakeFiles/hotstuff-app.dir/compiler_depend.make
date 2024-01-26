@@ -516,8 +516,21 @@ examples/CMakeFiles/hotstuff-app.dir/hotstuff_app.cpp.o: examples/hotstuff_app.c
   include/hotstuff/hotstuff.h \
   /usr/include/c++/11/queue \
   /usr/include/c++/11/bits/stl_queue.h \
-  include/hotstuff/liveness.h
+  include/hotstuff/liveness.h \
+  include/hotstuff/database.h \
+  include/hotstuff/HashMap.h \
+  include/hotstuff/HashBucket.h \
+  include/hotstuff/HashNode.h \
+  include/hotstuff/in_memory_db.cpp \
+  include/hotstuff/database.h \
+  include/hotstuff/helper.h
 
+
+include/hotstuff/helper.h:
+
+include/hotstuff/HashMap.h:
+
+include/hotstuff/database.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
@@ -729,6 +742,8 @@ include/hotstuff/liveness.h:
 
 /usr/include/openssl/safestack.h:
 
+include/hotstuff/HashBucket.h:
+
 /usr/include/c++/11/stdlib.h:
 
 /usr/include/openssl/comp.h:
@@ -826,6 +841,8 @@ include/hotstuff/hotstuff.h:
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+include/hotstuff/in_memory_db.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
@@ -1516,6 +1533,8 @@ include/hotstuff/util.h:
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+include/hotstuff/HashNode.h:
 
 salticidae/include/salticidae/crypto.h:
 
