@@ -21,6 +21,15 @@
 #include <signal.h>
 #include <sys/time.h>
 
+
+#include <fstream>
+#include "hotstuff/database.h"
+#include "hotstuff/in_memory_db.cpp"
+#include "hotstuff/helper.h"
+
+
+
+
 #include "salticidae/type.h"
 #include "salticidae/netaddr.h"
 #include "salticidae/network.h"
@@ -51,6 +60,16 @@ uint32_t cid;
 uint32_t cnt = 0;
 uint32_t nfaulty;
 
+
+
+uint32_t table_size =  20000;
+double denom = 0;
+double g_zipf_theta = 0.5;
+double zeta_2_theta;
+uint64_t the_n;
+
+myrand *mrand;
+
 struct Request {
     command_t cmd;
     size_t confirmed;
@@ -65,6 +84,53 @@ std::unordered_map<const uint256_t, Request> waiting;
 std::vector<NetAddr> replicas;
 std::vector<std::pair<struct timeval, double>> elapsed;
 std::unique_ptr<Net> mn;
+
+
+
+uint64_t zipf(uint64_t n, double theta)
+{
+    assert(this->the_n == n);
+    assert(theta == g_zipf_theta);
+    double alpha = 1 / (1 - theta);
+    double zetan = denom;
+    double eta = (1 - pow(2.0 / n, 1 - theta)) /
+                 (1 - zeta_2_theta / zetan);
+    //	double eta = (1 - pow(2.0 / n, 1 - theta)) /
+    //		(1 - zeta_2_theta / zetan);
+    double u = (double)(mrand->next() % 10000000) / 10000000;
+    double uz = u * zetan;
+    if (uz < 1)
+        return 1;
+    if (uz < 1 + pow(0.5, theta))
+        return 2;
+    return 1 + (uint64_t)(n * pow(eta * u - eta + 1, alpha));
+}
+
+
+uint64_t get_server_clock()
+{
+#if defined(__i386__)
+    uint64_t ret;
+	__asm__ __volatile__("rdtsc"
+						 : "=A"(ret));
+#elif defined(__x86_64__)
+    unsigned hi, lo;
+	__asm__ __volatile__("rdtsc"
+						 : "=a"(lo), "=d"(hi));
+	uint64_t ret = ((uint64_t)lo) | (((uint64_t)hi) << 32);
+	ret = (uint64_t)((double)ret / CPU_FREQ);
+#else
+    timespec *tp = new timespec;
+    clock_gettime(CLOCK_REALTIME, tp);
+    uint64_t ret = tp->tv_sec * 1000000000 + tp->tv_nsec;
+    delete tp;
+#endif
+    return ret;
+}
+
+
+
+
 
 void connect_all() {
     for (size_t i = 0; i < replicas.size(); i++)
