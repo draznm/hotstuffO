@@ -11,10 +11,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tejas/work/hotstuffO/examples/hotstuff_client.cpp" "examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o" "gcc" "examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tejas/work/hotstuffO/CMakeFiles/hotstuff_static.dir/DependInfo.cmake"
-  "/home/tejas/work/hotstuffO/salticidae/CMakeFiles/salticidae_static.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
