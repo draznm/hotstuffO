@@ -436,7 +436,7 @@ void HotStuffBase::do_decide(Finality &&fin, int key, int val) {
     part_decided++;
     state_machine_execute(fin);
 
-    db_write(0, 2);
+    // db_write(0, 2);
 
     auto it = decision_waiting.find(fin.cmd_hash);
     if (it != decision_waiting.end())

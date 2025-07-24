@@ -24,7 +24,7 @@
 #define LOG_INFO HOTSTUFF_LOG_INFO
 #define LOG_DEBUG HOTSTUFF_LOG_DEBUG
 #define LOG_WARN HOTSTUFF_LOG_WARN
-#define LOG_PROTO HOTSTUFF_LOG_PROTO
+#define LOG_PROTO HOTSTUFF_LOG_DEBUG
 
 namespace hotstuff {
 
@@ -143,7 +143,7 @@ void HotStuffCore::update(const block_t &nblk) {
         const block_t &blk = *it;
         blk->decision = 1;
         do_consensus(blk);
-        LOG_PROTO("commit %s", std::string(*blk).c_str());
+        LOG_DEBUG("commit %s", std::string(*blk).c_str());
         for (size_t i = 0; i < blk->cmds.size(); i++)
             do_decide(Finality(id, 1, i, blk->height,
                                 blk->cmds[i], blk->get_hash()),  blk->keys[i], blk->vals[i]);
@@ -170,7 +170,7 @@ block_t HotStuffCore::on_propose(const std::vector<uint256_t> &cmds, const std::
     on_deliver_blk(bnew);
     update(bnew);
     Proposal prop(id, bnew, nullptr);
-    LOG_PROTO("propose %s", std::string(*bnew).c_str());
+    LOG_DEBUG("propose %s", std::string(*bnew).c_str());
     if (bnew->height <= vheight)
         throw std::runtime_error("new block should be higher than vheight");
     /* self-receive the proposal (no need to send it through the network) */
@@ -182,7 +182,7 @@ block_t HotStuffCore::on_propose(const std::vector<uint256_t> &cmds, const std::
 }
 
 void HotStuffCore::on_receive_proposal(const Proposal &prop) {
-    LOG_PROTO("got %s", std::string(prop).c_str());
+    LOG_DEBUG("got %s", std::string(prop).c_str());
     bool self_prop = prop.proposer == get_id();
     block_t bnew = prop.blk;
     if (!self_prop)
@@ -211,7 +211,7 @@ void HotStuffCore::on_receive_proposal(const Proposal &prop) {
             }
         }
     }
-    LOG_PROTO("now state: %s", std::string(*this).c_str());
+    LOG_DEBUG("now state: %s", std::string(*this).c_str());
     if (!self_prop && bnew->qc_ref)
         on_qc_finish(bnew->qc_ref);
     on_receive_proposal_(prop);
@@ -222,8 +222,8 @@ void HotStuffCore::on_receive_proposal(const Proposal &prop) {
 }
 
 void HotStuffCore::on_receive_vote(const Vote &vote) {
-    LOG_PROTO("got %s", std::string(vote).c_str());
-    LOG_PROTO("now state: %s", std::string(*this).c_str());
+    LOG_DEBUG("got %s", std::string(vote).c_str());
+    LOG_DEBUG("now state: %s", std::string(*this).c_str());
     block_t blk = get_delivered_blk(vote.blk_hash);
     assert(vote.cert);
     size_t qsize = blk->voted.size();
