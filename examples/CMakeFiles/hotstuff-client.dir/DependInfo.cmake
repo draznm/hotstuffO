@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tejas/work/hotstuffO/examples/hotstuff_client.cpp" "examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o" "gcc" "examples/CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o.d"
+  "" "examples/hotstuff-client" "gcc" "examples/CMakeFiles/hotstuff-client.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

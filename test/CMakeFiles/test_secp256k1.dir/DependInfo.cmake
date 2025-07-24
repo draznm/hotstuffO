@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tejas/work/hotstuffO/test/test_secp256k1.cpp" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o" "gcc" "test/CMakeFiles/test_secp256k1.dir/test_secp256k1.cpp.o.d"
+  "" "test/test_secp256k1" "gcc" "test/CMakeFiles/test_secp256k1.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

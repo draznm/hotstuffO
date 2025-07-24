@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hotstuff-client.dir/link.d"
   "CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o"
   "CMakeFiles/hotstuff-client.dir/hotstuff_client.cpp.o.d"
   "hotstuff-client"
