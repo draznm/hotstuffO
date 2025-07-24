@@ -1,4 +1,4 @@
-0:10.156.0.64:10000;20000	hotstuff.gen-sec0.conf
-1:10.156.0.68:10000;20000	hotstuff.gen-sec1.conf
-2:10.156.0.62:10000;20000	hotstuff.gen-sec2.conf
-3:10.156.0.65:10000;20000	hotstuff.gen-sec3.conf
+0:10.156.0.70:10000;20000	hotstuff.gen-sec0.conf
+1:10.156.0.75:10000;20000	hotstuff.gen-sec1.conf
+2:10.156.0.78:10000;20000	hotstuff.gen-sec2.conf
+3:10.156.0.71:10000;20000	hotstuff.gen-sec3.conf
